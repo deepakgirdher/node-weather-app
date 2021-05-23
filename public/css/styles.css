@@ -1,6 +1,6 @@
 body{
   color: #333;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   max-width: 650px;
   margin: 0 auto;
   padding: 0 16px;
@@ -15,25 +15,39 @@ body{
 
 footer {
   color: #888;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #ccc;
   margin-top: 16px;
   padding: 16px 0;
+  text-align: right;
 }
 
 header {
   margin-top: 16px;
-  margin-bottom: 48px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+header div{
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0px;
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 3rem;
   margin-bottom: 16px;
 }
 
 header a {
-  color: #888;
+  color: orange;
+  font-weight: bold;
+  letter-spacing: 1px;
   margin-right: 16px;
   text-decoration: none;
+}
+
+header a:hover{
+  color: orangered;
 }
 
 .portrait{
@@ -51,4 +65,29 @@ button{
   background: #888;
   color: #fff;
   padding:8px;
+}
+
+form{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.weatherIcon{
+  text-align: center;
+}
+
+.weatherIcon img{
+  width: 100px;
+}
+
+#message-2, #message-3, #message-4 {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#message-1{
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  letter-spacing: 1px;
 }

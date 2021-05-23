@@ -7,19 +7,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="icon" href="/img/weather.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
   <title>Weather</title>
 </head>
 
 <body>
   <div class="main-content">
     {{>header}}
-    <p>An app to get the weather info.</p>
+    <div class="weatherIcon">
+      <img src="/img/weather_main.png" alt="">
+    </div>
     <form action="">
       <input type="text" placeholder="Enter a location">
       <button type="submit">Search</button>
     </form>
     <p id='message-1'></p>
     <p id='message-2'></p>
+    <p id='message-3'></p>
+    <p id='message-4'></p>
   </div>
   {{>footer}}
 

@@ -33,14 +33,14 @@ app.get('', (req, res) => {
 
 app.get('/about', (req, res) => {
   res.render('about', {
-    title: 'About Page',
+    title: 'About',
     name: 'DG'
   })
 })
 
 app.get('/help', (req, res) => {
   res.render('help', {
-    helpText: 'This is help message',
+    helpText: 'Just enter a valid city name and see its weather report. No rocket science :)',
     title: 'Help',
     name: 'DG'
   })
